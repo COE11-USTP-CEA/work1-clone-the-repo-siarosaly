@@ -4,7 +4,7 @@ class student_gpa{
 	public static void main(String[] args){
 		/*
 		student gabs = new student();
-		gabs.setName("Benjo Gaburno");
+		gabs.setName("EngName");
 		gabs.setDept("CEA");
 
 		subject oop_class = new subject();
