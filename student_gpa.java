@@ -29,16 +29,31 @@ class student_gpa{
 			System.out.println("    Grade is " + s.getGrade());
 		}
 		*/
-		EngSubject coe11 = new EngSubject();
-		coe11.setSubjectName("OOP Subject");
-		coe11.setGrade(70.11f);
+		student sia = new student();
+		sia.setName("Rosaly Sia");
+		sia.setDept("CEA");
 
-		coe11.setUnits(2,2);
+		subject oop_class = new subject();
+		oop_class.setSubjectName("Object Oriented Programming");
+		oop_class.setGrade(89.00f);
+		macapagal.addSubject(oop_class);
 
-		boolean needsPRC = coe11.getHasPRC();
+		subject intgc_class = new subject();
+		intgc_class.setSubjectName("MATH");
+		intgc_class.setGrade(88.42f);
+		macapagal.addSubject(intgc_class);
 
-		System.out.println("Coe11 name is " + coe11.getSubjectName());
-		System.out.println("Coe11 lec units are " + coe11.getLecUnits());
-		System.out.println("Coe11 lab units are " + coe11.getLabUnits());
+		System.out.println("Student is " + Sia.getName());
+		System.out.println("Dept: " + Sia.getDept());
+		
+		System.out.println("Subjects of Student");
+		System.out.println("-------------------");
+		List<subject> subjects_ni_sia = sia.getSubjects();
+		
+		for(subject s : subjects_ni_sia){
+			System.out.println(" -- Subject: " + s.getSubjectName());
+			System.out.println("    Grade is " + s.getGrade());
+		}
+	
 	}
 }
